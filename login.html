@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Pirateweb from htmldesigntemplates.com/html/royallove/rsvp.html by Pirateweb/3.x [XR&CO'2014], Thu, 21 Mar 2024 13:49:39 GMT -->
+<!-- Pirateweb from htmldesigntemplates.com/html/royallove/login.html by Pirateweb/3.x [XR&CO'2014], Thu, 21 Mar 2024 13:49:48 GMT -->
 
 <head>
 
@@ -34,7 +34,7 @@
     <link href="../../../fonts.googleapis.com/css9d23.css?family=Great+Vibes" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target=".navbar-fixed-top">
+<body data-spy="scroll" data-target=".navbar-fixed-top" class="footer-2">
 
     <div class="preloader-area">
         <div class="loader loader-13">
@@ -51,17 +51,17 @@
         <nav class="navbar navbar-default navbar-fixed-top navbar-sticky-function navbar-arrow">
             <div class="container">
                 <div class="logo pull-left">
-                    <a href="index.html"><img src="images/header/logo-2.png" alt></a>
-                    <a href="index.html" class="sticky-logo"><img src="images/header/logo-1.png" alt></a>
+                    <a href="index-2.html"><img src="images/header/logo-2.png" alt></a>
+                    <a href="index-2.html" class="sticky-logo"><img src="images/header/logo-1.png" alt></a>
                 </div>
                 <div id="navbar" class="navbar-nav-wrapper pull-right">
                     <ul class="nav navbar-nav navbar-right" id="responsive-menu">
                         <li>
-                            <a href="#">Home <i class="fa fa-angle-down"></i></a>
+                            <a href="index.html">Home <i class="fa fa-angle-down"></i></a>
                             <ul>
-                                <li><a href="index.html">Home Style <i class="fa fa-angle-right"></i></a>
+                                <li><a href="index-2.html">Home Style <i class="fa fa-angle-right"></i></a>
                                     <ul>
-                                        <li><a href="index.html">Home 1</a></li>
+                                        <li><a href="index-2.html">Home 1</a></li>
                                         <li><a href="index-3.html">Home 2</a></li>
                                         <li><a href="index-4.html">Home 3</a></li>
                                         <li><a href="index-5.html">Home 4</a></li>
@@ -75,7 +75,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="#">Pages <i class="fa fa-angle-down"></i></a>
                             <ul>
                                 <li><a href="our-story.html">Our Story</a></li>
@@ -92,7 +92,7 @@
                                 <li><a href="bridesmaid.html">Bridesmaid</a></li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="shop.html">Shop <i class="fa fa-angle-down"></i></a>
                             <ul>
                                 <li><a href="shop.html">Shop List</a></li>
@@ -140,8 +140,7 @@
                                         <div class="item-image-holder">
                                             <a href="#&quot;"><img width="600" height="870"
                                                     src="images/gallery/thumb1-1.jpg"
-                                                    class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
-                                                    alt="i"></a>
+                                                    class="attachment-rt_thumbnail size-rt_thumbnail" alt="i"></a>
                                         </div>
                                         <div class="item-info-holder">
                                             <h5 class="product-title">
@@ -188,8 +187,8 @@
             <div class="row breadcumb-height">
                 <div class="col-lg-8 offset-lg-2 my-auto">
                     <div class="page-breadcumb">
-                        <h2>RSVP</h2>
-                        <p><a href="index.html">home </a>/ rsvp</p>
+                        <h2>My Account</h2>
+                        <p><a href="index-2.html">home </a>/ Login</p>
                     </div>
                 </div>
             </div>
@@ -200,70 +199,119 @@
     </section>
 
 
-    <section id="about-us" class="section-padding aboutus-inner">
+    <section id="account" class="account section-padding">
         <div class="container">
-            <div class="section-title wow fadeInDown">
-                <h2>Are You Attending</h2>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="latest-posts-widget widget widget-rsvp wow fadeIn">
-                        <div class="ft-about-content">
-                            <h4 class="widget-title cursive">Please reserve before Jan 02, 2019</h4>
-                            <form>
-                                <div class="col col-sm-12">
-                                    <input type="text" class="form-control" placeholder="Your name">
-                                </div>
-                                <div class="col col-sm-12">
-                                    <input type="email" class="form-control" placeholder="Email address">
-                                </div>
-                                <div class="col col-sm-6">
-                                    <select class="form-control">
-                                        <option value disabled selected>No. of guests</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                    </select>
-                                </div>
-                                <div class="col col-sm-6">
-                                    <select class="form-control">
-                                        <option value disabled selected>I am attending</option>
-                                        <option>All Events</option>
-                                        <option>Wedding Ceremony</option>
-                                        <option>Reception Party</option>
-                                    </select>
-                                </div>
-                                <div class="col col-sm-12">
-                                    <textarea class="form-control" rows="3" placeholder="Your message"></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Send</button>
-                            </form>
-                        </div>
+            <div class="account-inner">
+                <h3>Login</h3>
+                <form class method>
+                    <div class="form-group">
+                        <label>Username/Email Address:</label>
+                        <input type="text" class="form-control" name>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label>Password:</label>
+                        <input type="Password" class="form-control" name>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn_red">Login</button>
+                        <input class="checkbox" type="checkbox"> <span>Remember me</span>
+                    </div>
+                    <p class="lost_password">
+                        <a href="lost_password.html">Lost your password?</a>
+                    </p>
+                </form>
             </div>
         </div>
     </section>
 
 
-    <footer id="footer" class="footer-widgets">
-        <div class="footer-note">
-            <h1>Thank You</h1>
-            <p>Nathaniel &amp; Anna</p>
-        </div>
-        <div class="footer-copyright">
+    <footer class="footer">
+        <div class="footer-top">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-sm-6 col-sm-offset-3">
-                        <p class="para">The best gift is your praticipation, thanks to all </p>
-                        <ul class="social-media">
-                            <li><a class="facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a class="linkedin" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                            <li><a class="twitter" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        </ul>
-                        <p> Copyright @ 2018 Powred by <a href="https://cyclonethemes.com/">Cyclone Themes</a> All
-                            Rights Reserved. </p>
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <aside class="footer-box">
+                            <div class="aboutus-info">
+                                <p class="footer-logo"><img src="images/header/logo-2.png" alt="About Us"></p>
+                                <p>Donec vel finibus massa. Cras et nibh risus. Morbi at eu venenatis, nibh nec vehicula
+                                    fermentum felis enim.</p>
+                                <ul>
+                                    <li class="rl-office"><i class="fa fa-map-marker swing"></i> 2240 New yorkk Ct, WA
+                                        42150, USA</li>
+                                    <li class="rl-phone"><i class="fa fa-phone"></i> (+1) 207 123 1258</li>
+                                    <li class="rl-email"><i class="fa fa-envelope-o"></i> <a
+                                            href="https://htmldesigntemplates.com/cdn-cgi/l/email-protection"
+                                            class="__cf_email__"
+                                            data-cfemail="264f4840496654495f474a4a4950430845494b">[email&#160;protected]</a>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-xs-12">
+                        <aside class="footer-box">
+                            <div class="widget-wrapper">
+                                <h5>Information</h5>
+                                <ul class="menu">
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Gallery</a></li>
+                                    <li><a href="#">Latest News</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="col-md-2 col-sm-6 col-xs-12">
+                        <aside class="footer-box">
+                            <div class="widget-wrapper">
+                                <h5>Sitemap</h5>
+                                <ul class="menu">
+                                    <li><a href="#">Write For Us</a></li>
+                                    <li><a href="#">Friend Tells</a></li>
+                                    <li><a href="#">FAQ’s</a></li>
+                                    <li><a href="#">Get Helps</a></li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <aside class="footer-box" id="widget-subscriptions">
+                            <div class="widget-wrapper">
+                                <h5 class="widget-title heading-title">Newsletter</h5>
+                            </div>
+                            <div class="subscribe-inner">
+                                <div class="newsletter"><span>Subscribe to our newsletter for latest updates about event
+                                        and wedding agency.</span></div>
+                                <form method="post">
+                                    <p class="subscribe-email">
+                                        <input type="text" name="email" autocomplete="off" class="subscribe_email"
+                                            placeholder="Your email address">
+                                        <button class="button" type="submit" title="Subscribe"><span
+                                                class="fa fa-envelope-o"></span></button>
+                                    </p>
+                                </form>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="copyright col-md-8 col-sm-8 col-xs-12"> © 2019 <span>RoyalLove</span>. Design By <i
+                            class="fa fa-heart"></i> <span><a href="https://cyclonethemes.com/">Cyclone Themes</a>
+                        </span>. All Rights Reserved.</div>
+                    <div class="footer-socials col-md-4 col-sm-4 col-xs-12">
+                        <div class="social-icons pull-right">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -271,6 +319,7 @@
     </footer>
 
 
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="js/jquery.min.js"></script>
 
     <script src="js/bootstrap.min.js"></script>
@@ -318,9 +367,10 @@
     <script src="js/ytplayer.js"></script>
 
     <script src="js/custom.js"></script>
-    <script>(function () { if (!document.body) return; var js = "window['__CF$cv$params']={r:'867e65b87b1718f3',t:'MTcxMTAyODg4My4zMjAwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='../../cdn-cgi/challenge-platform/h/b/scripts/jsd/de9364586261/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);"; var _0xh = document.createElement('iframe'); _0xh.height = 1; _0xh.width = 1; _0xh.style.position = 'absolute'; _0xh.style.top = 0; _0xh.style.left = 0; _0xh.style.border = 'none'; _0xh.style.visibility = 'hidden'; document.body.appendChild(_0xh); function handler() { var _0xi = _0xh.contentDocument || _0xh.contentWindow.document; if (_0xi) { var _0xj = _0xi.createElement('script'); _0xj.innerHTML = js; _0xi.getElementsByTagName('head')[0].appendChild(_0xj); } } if (document.readyState !== 'loading') { handler(); } else if (window.addEventListener) { document.addEventListener('DOMContentLoaded', handler); } else { var prev = document.onreadystatechange || function () { }; document.onreadystatechange = function (e) { prev(e); if (document.readyState !== 'loading') { document.onreadystatechange = prev; handler(); } }; } })();</script>
+    <script>(function () { if (!document.body) return; var js = "window['__CF$cv$params']={r:'867e65d7dba736de',t:'MTcxMTAyODg4OC4zMjEwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='../../cdn-cgi/challenge-platform/h/b/scripts/jsd/de9364586261/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);"; var _0xh = document.createElement('iframe'); _0xh.height = 1; _0xh.width = 1; _0xh.style.position = 'absolute'; _0xh.style.top = 0; _0xh.style.left = 0; _0xh.style.border = 'none'; _0xh.style.visibility = 'hidden'; document.body.appendChild(_0xh); function handler() { var _0xi = _0xh.contentDocument || _0xh.contentWindow.document; if (_0xi) { var _0xj = _0xi.createElement('script'); _0xj.innerHTML = js; _0xi.getElementsByTagName('head')[0].appendChild(_0xj); } } if (document.readyState !== 'loading') { handler(); } else if (window.addEventListener) { document.addEventListener('DOMContentLoaded', handler); } else { var prev = document.onreadystatechange || function () { }; document.onreadystatechange = function (e) { prev(e); if (document.readyState !== 'loading') { document.onreadystatechange = prev; handler(); } }; } })();</script>
+</body>
 </body>
 
-<!-- Pirateweb from htmldesigntemplates.com/html/royallove/rsvp.html by Pirateweb/3.x [XR&CO'2014], Thu, 21 Mar 2024 13:49:39 GMT -->
+<!-- Pirateweb from htmldesigntemplates.com/html/royallove/login.html by Pirateweb/3.x [XR&CO'2014], Thu, 21 Mar 2024 13:49:49 GMT -->
 
 </html>
