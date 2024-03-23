@@ -96,48 +96,80 @@
 
     <section id="about-us" class="section-padding aboutus-inner">
         <div class="container">
-            <div class="section-title wow fadeInDown">
-                <h2>Are You Attending</h2>
+            <h1 class="text-center">RSVP</h1>
+            <form id="guestForm">
+              <div class="form-group">
+                <label for="guestName">Guest Name</label>
+                <input type="text" class="form-control" id="guestName" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="form-group" >
+                <label for="guestCount" >Number of Guests</label>
+                <input type="number" class="form-control" id="guestCount" min="0" value="0" style="background: transparent !important;">
+              </div>
+              <div class="form-group">
+                <label for="attending">I am attending</label>
+                <select class="form-control" id="attending" style="background: transparent !important;">
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary">Add Guest</button>
+              <p id="successMessage" style="display:none;">Guest added successfully!</p>
+              <!-- <a href="login.html" class="btn btn-primary">Go to Login Page</a> -->
+            </form>
+            
+            <div class="table-responsive" style="display: none;">
+              <table class="table table-striped" id="guestTable">
+                <thead>
+                  <tr>
+                    <th>Guest Name</th>
+                    <th>Email</th>
+                    <th>Guest Count</th>
+                    <th>Attending</th>
+                  </tr>
+                </thead>
+                <tbody id="guestList">
+                  <!-- Guest list will be dynamically populated here -->
+                </tbody>
+              </table>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="latest-posts-widget widget widget-rsvp wow fadeIn">
-                        <div class="ft-about-content">
-                            <h4 class="widget-title cursive">Please reserve before Jan 02, 2019</h4>
-                            <form>
-                                <div class="col col-sm-12">
-                                    <input type="text" class="form-control" placeholder="Your name">
-                                </div>
-                                <div class="col col-sm-12">
-                                    <input type="email" class="form-control" placeholder="Email address">
-                                </div>
-                                <div class="col col-sm-6">
-                                    <select class="form-control">
-                                        <option value disabled selected>No. of guests</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                    </select>
-                                </div>
-                                <div class="col col-sm-6">
-                                    <select class="form-control">
-                                        <option value disabled selected>I am attending</option>
-                                        <option>All Events</option>
-                                        <option>Wedding Ceremony</option>
-                                        <option>Reception Party</option>
-                                    </select>
-                                </div>
-                                <div class="col col-sm-12">
-                                    <textarea class="form-control" rows="3" placeholder="Your message"></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Send</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+          </div>
+        
+          <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+          <script>
+            $(document).ready(function () {
+              $('#guestForm').submit(function (e) {
+                e.preventDefault();
+                addGuest();
+              });
+        
+              function addGuest() {
+                var guestName = $('#guestName').val();
+                var email = $('#email').val();
+                var guestCount = $('#guestCount').val();
+                var attending = $('#attending').val();
+        
+                var newRow = '<tr><td>' + guestName + '</td><td>' + email + '</td><td>' + guestCount + '</td><td>' + attending + '</td></tr>';
+                $('#guestList').append(newRow);
+        
+                // Clear form fields after adding guest
+                $('#guestName').val('');
+                $('#email').val('');
+                $('#guestCount').val(0);
+                $('#attending').val('Yes');
+        
+                // Show success message
+                $('#successMessage').show().delay(2000).fadeOut();
+        
+                // Save guest list to session storage
+                sessionStorage.setItem('guestList', $('#guestList').html());
+              }
+            });
+          </script>
     </section>
 
 

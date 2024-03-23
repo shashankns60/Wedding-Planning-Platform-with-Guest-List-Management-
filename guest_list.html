@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Pirateweb from htmldesigntemplates.com/html/royallove/login.html by Pirateweb/3.x [XR&CO'2014], Thu, 21 Mar 2024 13:49:48 GMT -->
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Royal Love 😎</title>
+    <meta name="description" content="Romantic story or journey, wedding event, party schedule, rsvp form">
+    <meta name="keywords" content="CycloneThemes">
+    <meta name="author" content="CycloneThemes">
+
+    <link rel="icon" href="images/header/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="css/YTPlayer.css">
+    <link rel="stylesheet" type="text/css" href="css/animated-headlines.css">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+    <link href="css/plugin.css" rel="stylesheet" type="text/css">
+
+    <link href="../../../fonts.googleapis.com/css2a14.css?family=Roboto:100,300,400,700" rel="stylesheet">
+    <link href="../../../fonts.googleapis.com/css8648.css?family=Courgette" rel="stylesheet">
+    <link href="../../../fonts.googleapis.com/css0dfc.css?family=Dosis" rel="stylesheet">
+    <link href="../../../fonts.googleapis.com/css9d23.css?family=Great+Vibes" rel="stylesheet">
+</head>
+<style>
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .wrapper {
+      flex: 1;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      margin-top: auto; /* Pushes footer to bottom */
+    }
+  </style>
+<body data-spy="scroll" data-target=".navbar-fixed-top" class="footer-2">
+
+    <div class="preloader-area">
+        <div class="loader loader-13">
+            <div class="css-heart heart1"></div>
+            <div class="css-heart heart2"></div>
+            <div class="css-heart heart3"></div>
+            <div class="css-heart heart4"></div>
+        </div>
+    </div>
+
+
+    <header id="inner-navigation">
+
+        <nav class="navbar navbar-default navbar-fixed-top navbar-sticky-function navbar-arrow">
+            <div class="container">
+                <div class="logo pull-left">
+                    <a href="index-2.html"><img src="images/header/logo-2.png" alt></a>
+                    <a href="index-2.html" class="sticky-logo"><img src="images/header/logo-1.png" alt></a>
+                </div>
+                <div id="navbar" class="navbar-nav-wrapper pull-right">
+                    <ul class="nav navbar-nav navbar-right" id="responsive-menu">
+                        <li class="active">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="planner-1.html">Planner</a>
+                        </li>
+                        <li>
+                            <a href="rsvp.html">RSVP</a>
+                        </li>
+                        <li>
+                            <a href="events.html">Events</a>
+                        </li>
+                        <li>
+                            <a href="about-us.html">Couple</a>
+                        </li>
+                        <li>
+                            <a  href="login.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+               
+            </div>
+            <div id="slicknav-mobile"></div>
+        </nav>
+
+    </header>
+
+
+    <section class="breadcumb breadcumb-height breadcumb-bg-1 ">
+        <div class="container text-center breadcumb-height">
+            <div class="row breadcumb-height">
+                <div class="col-lg-8 offset-lg-2 my-auto">
+                    <div class="page-breadcumb">
+                        <h2>Guest List</h2>
+                        <p><a href="index-2.html">home </a>/ Guest-List</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="seperator">
+            <img src="images/body/layer-3.png" alt>
+        </div>
+    </section>
+
+
+    <section id="account" class="account section-padding">
+        <div class="container">
+            <h1>Guest List</h1>
+            <div class="table-responsive">
+                <table class="table table-striped" id="guestTable">
+                    <thead>
+                        <tr>
+                            <th>Guest Name</th>
+                            <th>Email</th>
+                            <th>Guest Count</th>
+                            <th>Attending</th>
+                        </tr>
+                    </thead>
+                    <tbody id="guestList">
+                        <!-- Guest list will be dynamically populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                // Retrieve guest list from session storage
+                var guestList = sessionStorage.getItem('guestList');
+                if (guestList) {
+                    $('#guestList').html(guestList);
+                }
+            });
+        </script>
+    </section>
+
+
+    <footer class="footer">
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="copyright col-md-8 col-sm-8 col-xs-12"> © 2019 <span>RoyalLove</span>. Design By <i
+                            class="fa fa-heart"></i> <span><a href="#">RSVP</a>
+                        </span>. All Rights Reserved.</div>
+                    <div class="footer-socials col-md-4 col-sm-4 col-xs-12">
+                        <div class="social-icons pull-right">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script src="js/swiper.js"></script>
+
+    <script src="js/wow.min.js"></script>
+
+    <script src="js/SmoothScroll.js"></script>
+
+    <script src="js/jquery.easypiechart.min.js"></script>
+
+    <script src="js/jquery.inview.min.js"></script>
+
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <script src="js/jquery.mixitup.js"></script>
+
+    <script src="js/jquery.counterup.min.js"></script>
+
+    <script src="js/animated-headlines.js"></script>
+
+    <script src="js/jquery.waypoints.min.js"></script>
+
+    <script src="js/jquery.countdown.min.js"></script>
+
+    <script src="js/jquery.nav.js"></script>
+
+    <script src="js/jquery.easing.min.js"></script>
+
+    <script src="js/slick.js"></script>
+
+    <script src="js/slicknav.js"></script>
+
+    <script src="js/custom-nav.js"></script>
+
+    <script src="js/jquery.touchSwipe.min.js"></script>
+
+    <script src="js/paradise_slider_min.js"></script>
+
+    <script src="js/custom.ytplayer.js"></script>
+
+    <script src="js/ytplayer.js"></script>
+
+    <script src="js/custom.js"></script>
+    <script>(function () { if (!document.body) return; var js = "window['__CF$cv$params']={r:'867e65d7dba736de',t:'MTcxMTAyODg4OC4zMjEwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='../../cdn-cgi/challenge-platform/h/b/scripts/jsd/de9364586261/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);"; var _0xh = document.createElement('iframe'); _0xh.height = 1; _0xh.width = 1; _0xh.style.position = 'absolute'; _0xh.style.top = 0; _0xh.style.left = 0; _0xh.style.border = 'none'; _0xh.style.visibility = 'hidden'; document.body.appendChild(_0xh); function handler() { var _0xi = _0xh.contentDocument || _0xh.contentWindow.document; if (_0xi) { var _0xj = _0xi.createElement('script'); _0xj.innerHTML = js; _0xi.getElementsByTagName('head')[0].appendChild(_0xj); } } if (document.readyState !== 'loading') { handler(); } else if (window.addEventListener) { document.addEventListener('DOMContentLoaded', handler); } else { var prev = document.onreadystatechange || function () { }; document.onreadystatechange = function (e) { prev(e); if (document.readyState !== 'loading') { document.onreadystatechange = prev; handler(); } }; } })();</script>
+</body>
+</body>
+
+<!-- Pirateweb from htmldesigntemplates.com/html/royallove/login.html by Pirateweb/3.x [XR&CO'2014], Thu, 21 Mar 2024 13:49:49 GMT -->
+
+</html>
